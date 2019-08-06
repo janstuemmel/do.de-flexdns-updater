@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  updater:
+    build: .
+    restart: always
+    env_file:
+      - .env
+    environment:
+      INTERVAL: 300 # default
